@@ -23,9 +23,10 @@ dependencies {
 	//testImplementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive-test")
 	//testImplementation("org.springframework.boot:spring-boot-starter-webflux-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-	//testImplementation ("de.flapdoodle.embed:de.flapdoodle.embed.mongo:4.11.0")
+	testImplementation ("de.flapdoodle.embed:de.flapdoodle.embed.mongo:4.11.0")
 	testImplementation ("io.projectreactor:reactor-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
 
 }
 

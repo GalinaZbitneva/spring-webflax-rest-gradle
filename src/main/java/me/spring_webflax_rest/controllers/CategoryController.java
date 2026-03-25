@@ -1,4 +1,32 @@
 package me.spring_webflax_rest.controllers;
 
+import me.spring_webflax_rest.domain.Category;
+import me.spring_webflax_rest.repositories.CategoryRepository;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+@RestController
 public class CategoryController {
+
+    private final CategoryRepository categoryRepository;
+
+    public CategoryController(CategoryRepository categoryRepository) {
+        this.categoryRepository = categoryRepository;
+    }
+
+    //Flux может отправить 0, 1 или множество (вплоть до бесконечности) элементов
+    @GetMapping("/api/vi/categories")
+    Flux<Category> list(){
+        return categoryRepository.findAll();
+
+    }
+
+    //Mono 0 или 1 элемент
+    @GetMapping("/api/vi/categories/{id}")
+    Mono<Category> getById(@PathVariable String id){
+        return categoryRepository.findById(id);
+    }
 }
