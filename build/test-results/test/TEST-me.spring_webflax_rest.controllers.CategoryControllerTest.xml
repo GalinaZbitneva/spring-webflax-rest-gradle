@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="me.spring_webflax_rest.controllers.VendorControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-03-26T10:23:17" hostname="MacBook-Air-Galina.local" time="1.092">
+<testsuite name="me.spring_webflax_rest.controllers.CategoryControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-26T12:53:23" hostname="MacBook-Air-Galina.local" time="1.079">
   <properties/>
-  <testcase name="list()" classname="me.spring_webflax_rest.controllers.VendorControllerTest" time="1.062"/>
-  <testcase name="getVendorById()" classname="me.spring_webflax_rest.controllers.VendorControllerTest" time="0.028"/>
+  <testcase name="saveCategory()" classname="me.spring_webflax_rest.controllers.CategoryControllerTest" time="1.079"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (/Users/galinazbitneva/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.15.11/a38b16385e867f59a641330f0362ebe742788ed8/byte-buddy-agent-1.15.11.jar)
